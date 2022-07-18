@@ -1,0 +1,19 @@
+Plac this code on header.
+
+   <!--cart-->
+             <div class="header__cart">
+
+                <a class="js-ajax-cart-drawer-trigger" href="/cart">
+                  {%- liquid
+          if cart == empty
+            render 'icon-cart-empty'
+          else
+            render 'icon-cart'
+          endif
+        -%}
+                    <span class="js-ajax-cart-counter">{{ cart.item_count }}</span>
+                </a>
+
+            </div> 
+            <!--end cart-->
+              
